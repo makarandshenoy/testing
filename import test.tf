@@ -1,7 +1,7 @@
-variable "shared_credentials_file" {}
+
 
 provider "aws" {
-  shared_credentials_file = "${var.shared_credentials_file}"
+  shared_credentials_file = "${AWS_SHARED_CREDENTIALS_FILE}"
   region     = "us-east-1"
 }
 
