@@ -70,7 +70,7 @@ resource "aws_instance" "makku" {
               yum -y install git
               cd /home/ec2-user
               git clone https://github.com/makarandshenoy/webpage.git 
-              cp /home/ec2-user/Test1/index.html /var/www/html
+              cp /home/ec2-user/webpage/index.html /var/www/html
               EOF
   
 
