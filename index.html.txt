@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Treat link</title>
+</head>
+
+<body>
+<h1>Pandu is giving treat today at 1PM at KFC</h1>
+
+
+<button onclick="myFunction()">Click here if you want treat from Pandu</button>
+
+<script>
+function myFunction() {
+  alert("I am an alert box!");
+}
+</script>
+
+
+</body>
+</html>
