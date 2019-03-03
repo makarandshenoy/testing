@@ -1,5 +1,9 @@
-variable "aws_access_key" {}
-variable "aws_secret_key" {}
+variable "aws_access_key" {
+      default = "AKIAIX2PZSP5ZFZ5YQSA"
+  }
+variable "aws_secret_key" {
+     default = "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"
+  }
 
 provider "aws" {
   access_key = "${var.aws_access_key}"
