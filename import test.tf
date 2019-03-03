@@ -1,7 +1,6 @@
 
 
 provider "aws" {
-  shared_credentials_file = "${AWS_SHARED_CREDENTIALS_FILE}"
   region     = "us-east-1"
 }
 
