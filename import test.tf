@@ -66,7 +66,7 @@ resource "aws_instance" "makku" {
               service httpd start
               yum -y install git
               cd /home/ec2-user
-              git clone https://github.com/VijayKumarKamsali/Test1.git 
+              git clone https://github.com/makarandshenoy/webpage.git 
               cp /home/ec2-user/Test1/index.html /var/www/html
               EOF
   
