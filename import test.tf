@@ -1,7 +1,9 @@
 
-
+variable "shared_credentials_file" {
+  default = "C:\Users\user\.aws\credentials"
+  }
 provider "aws" {
-  shared_credentials_file = "C:\Users\user\.aws\credentials"
+  shared_credentials_file = "${var.shared_credentials_file}"
   region     = "us-east-1"
 }
 
