@@ -1,1 +1,2 @@
 terraform init
+terraform plan
