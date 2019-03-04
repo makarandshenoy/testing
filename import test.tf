@@ -1,4 +1,4 @@
-
+variable "ami" {}
 
 provider "aws" {
    shared_credentials_file = "c:/Users/user/.aws/credentials"
