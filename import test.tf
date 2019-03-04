@@ -1,5 +1,4 @@
-variable "shared_credentials_file" {}
-  
+
   
 
 provider "aws" {
