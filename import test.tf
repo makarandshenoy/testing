@@ -78,7 +78,7 @@ resource "aws_instance" "makku" {
    }
 
    resource "aws_instance" "makku1" {
-   ami = "ami-0080e4c5bc078760e"
+   ami = "${var.ami}"
    instance_type="t2.micro"
    vpc_security_group_ids=["${aws_security_group.makkusg.id}"]
    key_name="key"
