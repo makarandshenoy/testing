@@ -1,6 +1,7 @@
 
 
 provider "aws" {
+   shared_credentials_file = "c:/Users/user/.aws/credentials"
    region     = "us-east-1"
 }
 
