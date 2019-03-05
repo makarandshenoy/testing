@@ -1,10 +1,8 @@
 variable "ami" {}
-variable "awsaccesskey" {}
-variable "awssecretkey" {}
+
 
 provider "aws" {
-  access_key = "${var.awsaccesskey}"
-  secret_key = "${var.awssecretkey}"
+   shared_credentials_file = "C:/Users/user/.aws/credentials"
    region     = "us-east-1"
 }
 
@@ -58,7 +56,7 @@ resource "aws_security_group" "makkusg" {
 
 
 resource "aws_instance" "makku" {
-   ami = "ami-0080e4c5bc078760e"
+   ami = "${var.ami}"
    instance_type="t2.micro"
    vpc_security_group_ids=["${aws_security_group.makkusg.id}"]
    key_name="key"
