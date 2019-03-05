@@ -1,7 +1,10 @@
 variable "ami" {}
+variable "aws_access_key" {}
+variable "aws_secret_key" {}
 
 provider "aws" {
-   shared_credentials_file = "c:/Users/user/.aws/credentials"
+  access_key = "${var.aws_access_key}"
+  secret_key = "${var.aws_secret_key}"
    region     = "us-east-1"
 }
 
